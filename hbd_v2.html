@@ -147,7 +147,7 @@ ITM b 9,8
 ITM e 11,4
 EXT 11,4 3 12,8 DLG d
 PAL 0
-TUNE 2
+TUNE 5
 
 ROOM 3
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -231,7 +231,7 @@ NAME room_D_without key
 ITM e 11,4
 EXT 11,4 3 12,8 FX wave DLG d
 PAL 0
-TUNE 2
+TUNE 5
 
 TIL 10
 00000000
@@ -1019,10 +1019,9 @@ DLG f
 """
 {
   - {item "b"} >= 1 ?
-    A key! Can you open anyone's {wvy}piyan{wvy} with this?
-    {key_trigger = 1}{exit "4" 6 7}
+    {key_trigger = 1}{exit "4" 6 7}A key! Can you open anyone's {wvy}piyan{wvy} with this?
   - else ?
-    Cannot pick it up...
+    Cannot pick it up... why not take a break?
 }
 """
 NAME key dialog 1
@@ -1119,6 +1118,25 @@ C2,C2,C2,C2,C3,C3,A2,A2,F2,F2,E2,E2,D2,D2,D2,D2
 2A#,0,2A#,0,2A,0,2F,0,2G,0,2F,0,0,F,0,F
 A#2,A#2,A#2,A#2,A2,A2,F2,F2,G2,G2,F2,F2,0,F2,0,F2
 NAME hbdsong
+TMP FST
+SQR P2 P2
+
+TUNE 5
+2F,0,F,F,F,3A,0,0,2F,0,F,F,F,3A,0,0
+0,0,F2,E2,A#2,0,C3,0,0,0,B2,G2,0,F#2,0,A2
+>
+2A,0,A,2B,0,2C5,0,2F,0,F,F,F,2A,0,2F,0
+F2,D2,E2,0,0,0,F#2,0,G#2,0,D#2,0,0,A2,0,0
+>
+2E,0,2E,0,0,0,0,0,2F,0,F,F,F,3A,0,0
+0,G#2,0,D2,0,0,G2,0,B2,F#2,0,0,0,G2,0,0
+>
+2F,0,F,F,F,3A,0,0,2A,0,A,2B,0,2C5,0,0
+0,0,E2,0,0,G2,D2,0,0,0,0,G#2,0,A#2,0,0
+>
+2F,0,F,F,F,3A,0,0,2A,0,6G,0,0,0,0,0
+D#2,F#2,F#2,D2,D2,D2,D2,D2,D2,D2,F2,F2,F2,F2,F2,F2
+NAME omg
 TMP FST
 SQR P2 P2
 
